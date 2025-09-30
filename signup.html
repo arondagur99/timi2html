@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+  </head>
+  <body>
+    <a href="/slideshow.html"></a>
+    <h1>Form</h1>
+
+    <form action="/thankyou.html" method="get">
+      <label for="name">Fullt nafn:</label><br />
+      <input name="name" id="name" type="text" required /><br /><br />
+
+      <label for="email">Netfang:</label><br />
+      <input
+        maxlength="50"
+        type="email"
+        name="email"
+        id="email"
+        required
+      /><br /><br />
+
+      <label for="password">Lykilorð:</label><br />
+      <input
+        minlength="6"
+        maxlength="15"
+        name="password"
+        id="password"
+        type="password"
+        required
+      /><br /><br />
+
+      <label for="confirm">Staðfestu lykilorð:</label><br />
+      <input
+        minlength="6"
+        maxlength="15"
+        name="confirm"
+        id="confirm"
+        type="password"
+        required
+      /><br /><br />
+
+      <label for="age">Aldur:</label><br />
+      <input
+        min="1"
+        max="99"
+        name="age"
+        id="age"
+        type="number"
+        required
+      /><br /><br />
+
+      <label for="birthdate">Fæðingardagur:</label><br />
+      <input name="birtdate" id="birthdate" type="date" required /><br /><br />
+
+      <label for="radio">Karl:</label>
+      <input name="gender" id="radio" type="radio" value="male" required />
+
+      <label for="">Kona:</label>
+      <input name="gender" type="radio" value="female" required />
+
+      <label for="radio">Annað:</label>
+      <input name="gender" type="radio" value="other" required /><br /><br />
+
+      <label for="">Samþykkiru skilmála?</label>
+      <input
+        type="checkbox"
+        name="agreement"
+        id="agreement"
+        value="yes"
+        required
+      />
+
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
